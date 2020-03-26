@@ -103,7 +103,7 @@ end
   end
   
   def play
-    turn until over? == true
+    turn until won? || draw?
     
     if won?
       puts "Congratulations #{winner}!"
