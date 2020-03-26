@@ -103,14 +103,12 @@ end
   end
   
   def play
-    turn until won? == true
+    turn until over? == true
     
     if won?
       puts "Congratulations #{winner}!"
     elsif draw?
       puts "Cat's Game!"
-    else 
-      nil
     end
   end
 end
