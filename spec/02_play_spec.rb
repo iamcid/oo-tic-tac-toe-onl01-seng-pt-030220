@@ -139,7 +139,7 @@ describe './lib/tic_tac_toe.rb' do
         expect(game).to receive(:gets).and_return("7")
 
         expect($stdout).to receive(:puts).with("Congratulations X!")
-
+        
         game.play
       end
     end
